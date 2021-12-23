@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaLinkedin, FaFacebookF } from 'react-icons/fa'
 import { IoSunnyOutline, IoMoonSharp } from 'react-icons/io5'
 import * as config from 'lib/config'
 
@@ -49,8 +49,8 @@ export const Footer: React.FC<{
             target='_blank'
             rel='noopener noreferrer'
           >
-            
-            <FaTwitter />
+
+            <FaFacebookF />
           </a>
         )}
 
