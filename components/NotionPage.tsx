@@ -9,7 +9,7 @@ import BodyClassName from 'react-body-classname'
 import useDarkMode from 'use-dark-mode'
 import { PageBlock } from 'notion-types'
 
-import { Tweet, FacebookContextProvider } from 'react-static-tweets'
+import { Tweet, TwitterContextProvider } from 'react-static-tweets'
 
 // core notion renderer
 import { NotionRenderer, Code, Collection, CollectionRow } from 'react-notion-x'
@@ -164,7 +164,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   }
 
   return (
-    <FacebookContextProvider
+    <TwitterContextProvider
       value={{
         tweetAstMap: (recordMap as any).tweetAstMap || {},
         swrOptions: {
@@ -179,36 +179,36 @@ export const NotionPage: React.FC<types.PageProps> = ({
         <meta property='og:title' content={title} />
         <meta property='og:site_name' content={site.name} />
 
-        <meta name='facebook:title' content={title} />
-        <meta property='facebook:domain' content={site.domain} />
+        <meta name='twitter:title' content={title} />
+        <meta property='twitter:domain' content={site.domain} />
 
-        {config.facebook && (
-          <meta name='facebook:creator' content={`@${config.facebook}`} />
+        {config.twitter && (
+          <meta name='twitter:creator' content={`@${config.twitter}`} />
         )}
 
         {socialDescription && (
           <>
             <meta name='description' content={socialDescription} />
             <meta property='og:description' content={socialDescription} />
-            <meta name='facebook:description' content={socialDescription} />
+            <meta name='twitter:description' content={socialDescription} />
           </>
         )}
 
         {socialImage ? (
           <>
-            <meta name='facebook:card' content='summary_large_image' />
-            <meta name='facebook:image' content={socialImage} />
+            <meta name='twitter:card' content='summary_large_image' />
+            <meta name='twitter:image' content={socialImage} />
             <meta property='og:image' content={socialImage} />
           </>
         ) : (
-          <meta name='facebook:card' content='summary' />
+          <meta name='twitter:card' content='summary' />
         )}
 
         {canonicalPageUrl && (
           <>
             <link rel='canonical' href={canonicalPageUrl} />
             <meta property='og:url' content={canonicalPageUrl} />
-            <meta property='facebook:url' content={canonicalPageUrl} />
+            <meta property='twitter:url' content={canonicalPageUrl} />
           </>
         )}
 
@@ -281,6 +281,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
       />
 
       <GitHubShareButton />
-    </FacebookContextProvider>
+    </TwitterContextProvider>
   )
 }

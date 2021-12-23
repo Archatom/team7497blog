@@ -43,6 +43,7 @@ export const domain: string = getSiteConfig('domain')
 export const description: string = getSiteConfig('description', 'Notion Blog')
 
 // social accounts
+export const twitter: string | null = getSiteConfig('twitter', null)
 export const facebook: string | null = getSiteConfig('facebook', null)
 export const github: string | null = getSiteConfig('github', null)
 export const youtube: string | null = getSiteConfig('youtube', null)
