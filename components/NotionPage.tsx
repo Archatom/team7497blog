@@ -9,7 +9,7 @@ import BodyClassName from 'react-body-classname'
 import useDarkMode from 'use-dark-mode'
 import { PageBlock } from 'notion-types'
 
-import { Tweet, TwitterContextProvider } from 'react-static-tweets'
+import { Tweet, FacebookContextProvider } from 'react-static-tweets'
 
 // core notion renderer
 import { NotionRenderer, Code, Collection, CollectionRow } from 'react-notion-x'
@@ -164,7 +164,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   }
 
   return (
-    <TwitterContextProvider
+    <FacebookContextProvider
       value={{
         tweetAstMap: (recordMap as any).tweetAstMap || {},
         swrOptions: {
@@ -281,6 +281,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
       />
 
       <GitHubShareButton />
-    </TwitterContextProvider>
+    </FacebookContextProvider>
   )
 }
