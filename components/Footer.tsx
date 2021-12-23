@@ -41,11 +41,11 @@ export const Footer: React.FC<{
       ) : null}
 
       <div className={styles.social}>
-        {config.facebook && (
+        {config.twitter && (
           <a
-            className={styles.facebook}
-            href={`https://facebook.com/${config.facebook}`}
-            title={`Facebook @${config.facebook}`}
+            className={styles.twitter}
+            href={`https://facebook.com/${config.twitter}`}
+            title={`Facebook @${config.twitter}`}
             target='_blank'
             rel='noopener noreferrer'
           >

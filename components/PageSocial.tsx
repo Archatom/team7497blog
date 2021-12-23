@@ -13,10 +13,10 @@ interface SocialLink {
 }
 
 const socialLinks: SocialLink[] = [
-  config.facebook && {
-    name: 'facebook',
-    href: `https://www.facebook.com/${config.facebook}`,
-    title: `Facebook @${config.facebook}`,
+  config.twitter && {
+    name: 'twitter',
+    href: `https://www.facebook.com/${config.twitter}`,
+    title: `Facebook @${config.twitter}`,
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.124 96.123">
         <g>
