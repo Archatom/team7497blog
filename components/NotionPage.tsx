@@ -179,36 +179,36 @@ export const NotionPage: React.FC<types.PageProps> = ({
         <meta property='og:title' content={title} />
         <meta property='og:site_name' content={site.name} />
 
-        <meta name='twitter:title' content={title} />
-        <meta property='twitter:domain' content={site.domain} />
+        <meta name='facebook:title' content={title} />
+        <meta property='facebook:domain' content={site.domain} />
 
-        {config.twitter && (
-          <meta name='twitter:creator' content={`@${config.twitter}`} />
+        {config.facebook && (
+          <meta name='facebook:creator' content={`@${config.facebook}`} />
         )}
 
         {socialDescription && (
           <>
             <meta name='description' content={socialDescription} />
             <meta property='og:description' content={socialDescription} />
-            <meta name='twitter:description' content={socialDescription} />
+            <meta name='facebook:description' content={socialDescription} />
           </>
         )}
 
         {socialImage ? (
           <>
-            <meta name='twitter:card' content='summary_large_image' />
-            <meta name='twitter:image' content={socialImage} />
+            <meta name='facebook:card' content='summary_large_image' />
+            <meta name='facebook:image' content={socialImage} />
             <meta property='og:image' content={socialImage} />
           </>
         ) : (
-          <meta name='twitter:card' content='summary' />
+          <meta name='facebook:card' content='summary' />
         )}
 
         {canonicalPageUrl && (
           <>
             <link rel='canonical' href={canonicalPageUrl} />
             <meta property='og:url' content={canonicalPageUrl} />
-            <meta property='twitter:url' content={canonicalPageUrl} />
+            <meta property='facebook:url' content={canonicalPageUrl} />
           </>
         )}
 
