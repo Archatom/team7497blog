@@ -13,10 +13,10 @@ interface SocialLink {
 }
 
 const socialLinks: SocialLink[] = [
-  config.twitter && {
-    name: 'twitter',
-    href: `https://www.facebook.com/${config.twitter}`,
-    title: `Facebook @${config.twitter}`,
+  config.facebook && {
+    name: 'facebook',
+    href: `https://www.facebook.com/${config.facebook}`,
+    title: `Facebook @${config.facebook}`,
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.124 96.123">
         <g>
@@ -62,7 +62,7 @@ const socialLinks: SocialLink[] = [
 
   config.github && {
     name: 'github',
-    href: `https://github.com/Archatom/nextjs-notion-starter-kit`,
+    href: `https://github.com/${config.github}`,
     title: `GitHub @${config.github}`,
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
@@ -71,10 +71,10 @@ const socialLinks: SocialLink[] = [
     )
   },
 
-  config.github && {
-    name: 'github',
+  config.youtube && {
+    name: 'youtube',
     href: `https://www.youtube.com/channel/UCfwhmJXKZv5R4YJ29Xoxz4w`,
-    title: `Youtube @${config.github}`,
+    title: `Youtube @${config.youtube}`,
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 310 310">
@@ -120,8 +120,8 @@ const socialLinks: SocialLink[] = [
     )
   },
 
-  config.linkedin && {
-    name: 'linkedin',
+  config.instagram && {
+    name: 'instagram',
     href: `https://www.instagram.com/team_7497/`,
     title: `Instagram ${config.author}`,
     icon: (

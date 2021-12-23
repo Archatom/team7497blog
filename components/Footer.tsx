@@ -41,11 +41,11 @@ export const Footer: React.FC<{
       ) : null}
 
       <div className={styles.social}>
-        {config.twitter && (
+        {config.facebook && (
           <a
-            className={styles.twitter}
-            href={`https://twitter.com/${config.twitter}`}
-            title={`Twitter @${config.twitter}`}
+            className={styles.facebook}
+            href={`https://facebook.com/${config.facebook}`}
+            title={`Facebook @${config.facebook}`}
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -66,11 +66,23 @@ export const Footer: React.FC<{
           </a>
         )}
 
-        {config.linkedin && (
+        {config.youtube && (
           <a
-            className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
+            className={styles.youtube}
+            href={`https://www.youtube.com/channel/UCfwhmJXKZv5R4YJ29Xoxz4w`}
+            title={`Youtube @${config.youtube}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaLinkedin />
+          </a>
+        )}
+
+        {config.instagram && (
+          <a
+            className={styles.instagram}
+            href={`https://www.instagram.com/team_7497/`}
+            title={`Instagram ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
           >

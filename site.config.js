@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'Team7497',
-  domain: 'team7497blog.com',
+  domain: 'team7497blog.vercel.app',
   author: 'Team7497',
 
   // open graph metadata (optional)
@@ -17,9 +17,10 @@ module.exports = {
   socialImageSubtitle: 'Hello World! 👋',
 
   // social usernames (optional)
-  twitter: 'FRC7497',
+  fackbook: 'FRC7497',
   github: 'team7497',
-  linkedin: 'team7497',
+  youtube: 'team7497',
+  instagram: 'team7497',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults

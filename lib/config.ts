@@ -43,9 +43,10 @@ export const domain: string = getSiteConfig('domain')
 export const description: string = getSiteConfig('description', 'Notion Blog')
 
 // social accounts
-export const twitter: string | null = getSiteConfig('twitter', null)
+export const facebook: string | null = getSiteConfig('facebook', null)
 export const github: string | null = getSiteConfig('github', null)
-export const linkedin: string | null = getSiteConfig('linkedin', null)
+export const youtube: string | null = getSiteConfig('youtube', null)
+export const instagram: string | null = getSiteConfig('instagram', null)
 
 export const socialImageTitle: string | null = getSiteConfig(
   'socialImageTitle',
@@ -115,8 +116,8 @@ export const fathomId = isDev ? null : process.env.NEXT_PUBLIC_FATHOM_ID
 
 export const fathomConfig = fathomId
   ? {
-      excludedDomains: ['localhost', 'localhost:3000']
-    }
+    excludedDomains: ['localhost', 'localhost:3000']
+  }
   : undefined
 
 const defaultEnvValueForPreviewImageSupport =
