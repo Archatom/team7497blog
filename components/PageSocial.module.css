@@ -86,11 +86,11 @@
   border-color: #2795e9;
 }
 
-.linkedin .actionBgPane {
-  background: #0077b5;
+.youtube .actionBgPane {
+  background: #FF0000;
 }
-.linkedin:hover {
-  border-color: #0077b5;
+.youtube:hover {
+  border-color: #FF0000;
 }
 
 .github .actionBgPane {
@@ -100,11 +100,11 @@
   border-color: #c9510c;
 }
 
-.medium .actionBgPane {
-  background: #00ab6c;
+.instagram .actionBgPane {
+  background: #f09433;
 }
-.medium:hover {
-  border-color: #00ab6c;
+.instagram:hover {
+  border-color: #f09433;
 }
 
 .email .actionBgPane {
